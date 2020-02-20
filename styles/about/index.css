@@ -43,7 +43,7 @@
   text-align: justify;
 }
 
-.about__more{
+.about__more {
   border: none;
   padding: 1.3rem 1.6rem;
   background-color: var(--fourth-color);
@@ -62,10 +62,10 @@
 .about__rest {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s;
+  transition: max-height 1s;
 }
 
-.about__rest:target {
+.about__rest.target {
   max-height: 100rem;
 }
 

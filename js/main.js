@@ -14,6 +14,9 @@ const WebSite = {
 
     //Portfolio
     this.Portfolio()
+
+    // Toggle Height
+    this.ToggleHeight()
   },
   Navbar: function () {
     const menuBars = Resources.SelectOneElement('.menu__bar')
@@ -35,6 +38,15 @@ const WebSite = {
       card.addEventListener('click', function (){
         card.classList.toggle('active')
       })
+    })
+  },
+  ToggleHeight: function () {
+    const link = Resources.SelectOneElement('.about__more')
+    const restContent = Resources.SelectOneElement('.about__rest')
+
+    link.addEventListener('click', function () {
+      console.log(link)
+      restContent.classList.toggle('target')
     })
   }
 }

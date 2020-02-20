@@ -1,0 +1,148 @@
+.portfolio {
+  position: relative;
+  background-color: #fff;
+  height: auto;
+}
+.portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14.5rem;
+  background-image: url("../../svg/white-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: var(--third-color);
+}
+
+.portfolio__headline {
+  color: black;
+  height: 22rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolio__header {
+  font-size: 4rem;
+  font-family: var(--Raleway);
+  color: var(--third-color);
+  text-shadow: 0 0 0.15rem var(--bg-color);
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1rem;
+  height: auto;
+  margin: 2rem 1rem 0;
+}
+
+.portfolio__card {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  height: 28rem;
+}
+
+
+.portfolio__front,
+.portfolio__back {
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.portfolio__front {
+  transform: perspective(60rem) rotateY(0deg);
+}
+
+.portfolio__front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: background-color 0.8s;
+}
+
+
+.portfolio__front:hover::before {
+  background-color: transparent;
+}
+
+.portfolio__back {
+  transform: perspective(60rem) rotateY(180deg);
+}
+
+.portfolio__content {
+  display: flex;
+  background: var(--text-color);
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding: 0 1.6rem;
+  justify-content: center;
+}
+
+.portfolio__content > * {
+  margin: 1rem 0;
+}
+
+.portfolio__title {
+  font-size: 2.4rem;
+  color: var(--third-color);
+  font-family: var(--Pacifico);
+  padding: 1.6rem;
+  width: max-content;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+
+.portfolio__img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.portfolio__techs {
+  display: flex;
+  margin: 0;
+}
+
+.portfolio__tech {
+  margin-right: 1rem;
+}
+
+.portfolio__title--techs {
+  background-color: transparent;
+  padding: 0;
+  margin: 1.6rem 0;
+  font-size: 2rem;
+}
+
+.porfolio__desc {
+  width: 100%;
+}
+.portfolio__link {
+  font-size: 2rem;
+  color: white;
+  margin: 0 1rem;
+}
+
+.portfolio__card.active > .portfolio__front {
+  transform: perspective(60rem) rotateY(-180deg);
+}
+
+.portfolio__card.active > .portfolio__back {
+  transform: perspective(60rem) rotateY(0deg);
+}

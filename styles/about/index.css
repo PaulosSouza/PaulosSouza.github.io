@@ -1,0 +1,74 @@
+.about {
+  position: relative;
+  text-align: center;
+  padding: 1.6rem 2.4rem;
+  background-color: var(--third-color);
+  color: var(--text-color);
+  height: auto;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10.5rem;
+  background-image: url("../../svg/brown-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+}
+
+.about__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  margin-bottom: 1.6rem;
+  margin-top: 10rem;
+}
+
+.about__circle {
+  font-family: var(--Raleway);
+  color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 400;
+  text-shadow: 0 0 1rem var(--bg-color);
+}
+
+.about__description {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.about__more{
+  border: none;
+  padding: 1.3rem 1.6rem;
+  background-color: var(--fourth-color);
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  border-radius: 2rem;
+}
+
+.about__link {
+  font-size: 2rem;
+  font-family: var(--Pacifico);
+  color: var(--text-color);
+}
+
+.about__rest {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s;
+}
+
+.about__rest:target {
+  max-height: 100rem;
+}
+
+.about p {
+  margin: 1.6rem 0;
+}

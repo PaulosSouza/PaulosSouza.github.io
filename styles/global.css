@@ -1,0 +1,48 @@
+/* Header CSS */
+@import url("animation.css");
+@import url("slider/index.css");
+@import url("header/index.css");
+@import url("about/index.css");
+@import url("portfolio/index.css");
+@import url("mediaqueries.css");
+
+:root {
+  --bg-color: #000000;
+  --third-color: #3e3636;
+  --fourth-color: #d72323;
+  --text-color: #f5eded;
+
+  --Raleway: "Raleway", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --Pacifico: "Pacifico", cursive;
+}
+
+html {
+  font-family: var(--Roboto);
+  font-size: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

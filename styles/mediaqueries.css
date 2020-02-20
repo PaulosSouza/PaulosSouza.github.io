@@ -1,0 +1,156 @@
+@media screen and (min-width: 600px) {
+  .menu__bar {
+    display: none;
+  }
+
+  .menu__list {
+    position: static;
+    right: initial;
+    top: initial;
+    background-color: initial;
+    display: flex;
+    flex-direction: initial;
+    justify-content: flex-end;
+    align-items: center;
+    clip-path: initial;
+    transition: initial;
+    z-index: initial;
+
+    height: 100%;
+  }
+
+  .menu__container {
+    position: initial;
+    height: initial;
+
+    display: flex;
+    flex-direction: initial;
+    justify-content: initial;
+    align-items: center;
+    margin-top: initial;
+    margin-left: initial;
+
+    height: 100%;
+    width: auto;
+    padding-right: 3rem;
+  }
+
+  .menu__item {
+    font-size: 1.6rem;
+    margin-right: initial;
+  }
+
+  .menu__link {
+    position: initial;
+    padding: 1.6rem 2rem;
+    color: var(--text-color);
+    box-shadow: initial;
+    border-radius: 1.6rem;
+    transition: background-color 0.6s, border-radius 0.6s;
+    margin-right: 1rem;
+  }
+
+  .menu__link:hover {
+    border-radius: 1rem;
+    background-color: var(--third-color);
+  }
+
+  .menu__close {
+    display: none;
+  }
+
+  .slider {
+    margin: 2rem 0;
+  }
+
+  .about::before {
+    height: 15rem;
+  }
+
+  .portfolio__card {
+    height: 40rem;
+  }
+
+  .portfolio__content {
+    align-items: center;
+  }
+
+  .portfolio__title {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .about::before {
+    height: 20rem;
+  }
+
+  .about__profile {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .portfolio::before {
+    height: 20rem;
+  }
+
+  .portfolio__headline {
+    height: 30rem;
+  }
+
+  .slide:hover {
+    flex-grow: 1.2;
+  }
+
+  .slide--profile {
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about::before {
+    height: 25rem;
+  }
+
+  .about__profile {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .about::before {
+    height: 35rem;
+  }
+
+  .about__profile {
+    margin-top: 30rem;
+  }
+
+  .portfolio::before {
+    height: 25rem;
+  }
+
+  .portfolio__headline {
+    height: 40rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .about::before {
+    display: none;
+  }
+
+  .portfolio::before {
+    display: none;
+  }
+
+  .about__profile {
+    margin-top: 3rem;
+  }
+
+  .portfolio__headline {
+    height: 10rem;
+  }
+}

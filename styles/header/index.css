@@ -1,0 +1,128 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9vh;
+  padding: 1.5rem 3rem;
+  position: relative;
+  box-shadow: 0 0.1rem 0.5rem var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.menu__logo--container {
+  height: 100%;
+}
+
+.menu__logo {
+  font-size: 3rem;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  height: 100%;
+}
+
+.first-sentence {
+  position: absolute;
+  font-size: 3.5rem;
+  color: var(--third-color);
+  font-family: --Pacifico;
+  display: inline;
+  top: 35%;
+  transform: translateY(-50%) rotate(-30deg);
+  letter-spacing: 0.3rem;
+  display: inline-block;
+}
+
+.second-sentence {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  top: 65%;
+  transform: rotate(-30deg);
+  width: 100%;
+  display: inline-block;
+  color: #fff;
+}
+
+.second-sentence::first-letter {
+  font-size: 3rem;
+  color: var(--third-color);
+}
+
+.menu__bar {
+  cursor: pointer;
+}
+
+.bar {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: #fff;
+  display: block;
+  margin: 0.4rem;
+}
+
+.menu__list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--third-color);
+  width: 60vw;
+  height: 58vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  clip-path: ellipse(23px 96px at 106% -100%);
+  transition: 0.8s ease-in-out;
+  z-index: 1000;
+}
+
+.menu__list.open {
+  clip-path: ellipse(100% 100% at 101% 0%);
+}
+
+.menu__container {
+  position: relative;
+  height: 65%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4.5rem;
+  margin-left: 1.8rem;
+}
+
+.menu__item {
+  font-size: 1.5rem;
+  margin-right: -2.5rem;
+}
+
+.menu__link {
+  position: relative;
+  padding: 1rem;
+  color: white;
+  background: transparent;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.menu__link:hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.menu__close {
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu__close i {
+  font-size: 2.5rem;
+  animation: rotate 5s linear infinite;
+}
+

@@ -1,0 +1,27 @@
+.footer {
+  height: 40vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer__top {
+  background-color: var(--bg-color);
+  width: max-content;
+  border-radius: 50%;
+  padding: 2.2rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2rem;
+}
+
+.footer__icontop {
+  color: var(--text-color);
+  font-size: 2rem;
+  animation: toUp .8s linear infinite;
+}

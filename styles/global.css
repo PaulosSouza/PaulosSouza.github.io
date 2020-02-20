@@ -5,6 +5,7 @@
 @import url("about/index.css");
 @import url("portfolio/index.css");
 @import url("mediaqueries.css");
+@import url("footer/index.css");
 
 :root {
   --bg-color: #000000;
